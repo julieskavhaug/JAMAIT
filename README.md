@@ -1,6 +1,3 @@
 # JAMAIT
 
-Julie lav noget
-enig
-
-haha
+magnus laver nada

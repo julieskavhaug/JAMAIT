@@ -37,7 +37,7 @@ var product 3={
     id: userName;
 productName: ["array"];
 productQuantity: "Number";
-productPrice: "Number";
+productPrice: Number;
 }
 
 var product 4={

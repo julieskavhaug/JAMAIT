@@ -4,7 +4,7 @@ var user =
 }
 
 var account = {
-    id: userName;
+    firstName: "String"
     homeAdress: "String";
     phoneNumber: "String";
     emailAdress: "String";
@@ -18,87 +18,87 @@ var order={
     orderStatus: "String"
 }
 
-var product 1={
+var product  1={
     id: userName;
-productName: ["array"];
+productName: "Chair 1" ;
 productQuantity: Number;
-installedPrice: Number;
-selfInstalledPrice: Number;
+installedPrice: 55;
+selfInstalledPrice: 45;
 }
 
 var product 2={
     id: userName;
 productName: ["array"];
-productQuantity: "Number";
-productPrice: "Number";
+productQuantity: Number;
+productPrice: Number;
 }
 
 var product 3={
-    id: userName;
+    id: account;
 productName: ["array"];
-productQuantity: "Number";
+productQuantity: Number;
 productPrice: Number;
 }
 
 var product 4={
     id: userName;
 productName: ["array"];
-productQuantity: "Number";
-productPrice: "Number";
+productQuantity: Number;
+productPrice: Number;
 }
 
 var product 5={
     id: userName;
 productName: ["array"];
-productQuantity: "Number";
-productPrice: "Number";
+productQuantity: Number;
+productPrice: Number;
 }
 
 var product 6={
     id: userName;
 productName: ["array"];
-productQuantity: "Number";
-productPrice: "Number";
+productQuantity: Number;
+productPrice: Number;
 }
 
 var product 7={
     id: userName;
 productName: ["array"];
-productQuantity: "Number";
-productPrice: "Number";
+productQuantity: Number;
+productPrice: Number;
 }
 
 var product 8={
     id: userName;
 productName: ["array"];
-productQuantity: "Number";
-productPrice: "Number";
+productQuantity: Number;
+productPrice: Number;
 }
 
 var product 9={
     id: userName;
 productName: ["array"];
-productQuantity: "Number";
-productPrice: "Number";
+productQuantity: Number;
+productPrice: Number;
 }
 
 var product 10={
     id: userName;
 productName: ["array"];
-productQuantity: "Number";
-productPrice: "Number";
+productQuantity: Number;
+productPrice: Number;
 }
 
 var product 11={
     id: userName;
 productName: ["array"];
-productQuantity: "Number";
-productPrice: "Number";
+productQuantity: Number;
+productPrice: Number;
 }
 
 var product 12={
     id: userName;
 productName: ["array"];
-productQuantity: "Number";
-productPrice: "Number";
+productQuantity: Number;
+productPrice: Number;
 }

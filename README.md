@@ -1,3 +1,0 @@
-# JAMAIT
-
-magnus laver nada

@@ -13,7 +13,7 @@
 <header>
     <div class="container">
         <div class="row">
-            <a href="hjemmeside.html" class="logo"><img src="images/Klekken.jpg" width="150px" height="75px"></a>
+            <a href="hjemmeside.html" class="logo"><img src="images/klekken01.png" width="150px" height="75px"></a>
             <nav>
                 <ul>
                     <li><a href="hjemmeside.html">Home</a></li>
@@ -31,12 +31,26 @@
 
 
 <div class="log-in">
-<h2>Login</h2>
+<h2>Registration and Login</h2>
+
+    <form id="register-form">
+        <input id="username" type="text" placeholder="Enter desired Username" value=""/>
+        <input id="password" type="password" placeholder="Enter Password" value=""/>
+        <input id="registration_btn" type="submit" value="Register" onClick="storeLogin()"/>
+
+    </form>
+    <script language="JavaScript">
+        function storeLogin() {
+            localStorage.setItem('username', username.value);
+            localStorage.setItem('password', password.value);
+            alert('New user has been created.');
+        }
+    </script>
 
 
     <form name="login">
-        Username<input type="text" placeholder="Enter Username" name="userid"/>
-        Password<input type="password" Placeholder="Enter Password" name="pswrd"/>
+        <input type="text" placeholder="Enter Username" name="userid"/>
+        <input type="password" Placeholder="Enter Password" name="pswrd"/>
         <input type="button" onclick="check(this.form)" value="Login"/>
         <input type="reset" value="Cancel"/>
     </form>

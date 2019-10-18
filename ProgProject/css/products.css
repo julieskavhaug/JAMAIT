@@ -211,11 +211,19 @@ header nav ul li a:hover
     margin-bottom: 50px;
     margin-top: -30px;
 }
-table{
-    margin-left: -8%;
-}
-tabl{
+.tents
+{
+    margin-left: 0%;
 }
 
+.tableware
+{
+    margin-left: 22%;
+}
+
+.tablesAndChairs
+{
+    margin-left: 4%;
+}
 
 

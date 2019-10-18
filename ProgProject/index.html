@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My application</title>
-    <link href="css/log-in.css" rel="stylesheet" type="text/css">
+    <title>Login</title>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-</head>
+    <link href="css/log-in.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
 <header>
     <div class="container">
         <div class="row">
-            <a href="hjemmeside.html" class="logo"><img src="images/Klekken.jpg" width="150px" height="75px"></a>
+            <a href="hjemmeside.html" class="logo"><img src="images/klekken01.png" width="150px" height="75px"></a>
             <nav>
                 <ul>
                     <li><a href="hjemmeside.html">Home</a></li>
@@ -30,29 +29,44 @@
 
 
 <div class="log-in">
-<h2>Register</h2>
+    <h2>Registration and Login</h2>
 
-<form id="register-form">
-    <input id="username" type="text" placeholder="Username" value=""/>
-    <input id="password" type="password" placeholder="Password" value=""/>
-    <input id="registration_btn" type="submit" value="Register" onClick="storeLogin()"/>
-</form>
+    <form id="register-form">
+        <input id="username" type="text" placeholder="Enter desired Username" value=""/>
+        <input id="password" type="password" placeholder="Enter desired Password" value=""/>
+        <input id="registration_btn" type="submit" value="Register" onClick="storeLogin()"/>
+
+    </form>
+    <script language="JavaScript">
+        function storeLogin() {
+            localStorage.setItem('username', username.value);
+            localStorage.setItem('password', password.value);
+            alert('New user has been created.');
+        }
+    </script>
 
 
-
-
-<h2>Show user</h2>
-<input id="list_users_btn" type="submit" value="Show user" onClick="showUser()"/>
-<h2>Login</h2>
-<form id="login-form">
-    <input id="enteredName" type="text" placeholder="Enter Username" value=""/>
-    <input id="enteredPass" type="password" placeholder="Enter Password" value=""/>
-    <input id="login_btn" type="submit" value="Login" onClick="checkLogin()"/>
-</form>
-<h2>Clear user</h2>
-<input id="clear_users_btn" type="submit" value="Clear user" onClick="clearUser()"/>
-
-<script src="js/app2.js"> </script>
+    <form name="login">
+        <input type="text" placeholder="Enter Username" name="userid"/>
+        <input type="password" Placeholder="Enter Password" name="pswrd"/>
+        <input type="button" onclick="check(this.form)" value="Login"/>
+        <input type="reset" value="Cancel"/>
+    </form>
+    <script language="javascript">
+        function check(form)/*function to check userid & password*/
+        {
+            /*the following code checkes whether the entered userid and password are matching*/
+            if(form.userid.value === "Jama" && form.pswrd.value === "IT")
+            {
+                alert("Successful login")/*displays a message in case of successful login*/
+            }
+            else
+            {
+                alert("Incorrect username or password")/*displays error message*/
+            }
+            /*After a successful login to the site we should be using a form of session caching to store the userdata.*/
+        }
+    </script>
 </div>
 
 

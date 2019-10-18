@@ -6,7 +6,12 @@
 
 body
 {
-    height: 800px;
+    height: 100%;
+}
+
+.sub-heading a
+{
+    color: orange;
 }
 
 header

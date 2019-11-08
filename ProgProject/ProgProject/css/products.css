@@ -65,7 +65,7 @@ header nav ul li a{
 header nav ul li a:hover
 {
     text-decoration: none;
-    color: orange;
+    color: #a8d9ff;
     font-weight: bolder;
 }
 
@@ -92,7 +92,7 @@ header nav ul li a:hover
     margin-left: -3%;
     width: 6%;
     height: 1px;
-    background-color: orange;
+    background-color: #a8d9ff;
     z-index: 1;
     -webkit-transition: 0.3s ease;   /*Chrome. kalder*/
     -moz-transition: 0.3s ease;    /*Mozilla*/
@@ -139,7 +139,7 @@ header nav ul li a:hover
 
 .intro-block:hover, .intro-block.active
 {
-    background: orange;
+    background: #a8d9ff;
 }
 
 .intro-block:hover
@@ -187,7 +187,7 @@ header nav ul li a:hover
 
 .btn{
     padding: 6px 9px;
-    background-color: orange;
+    background-color: #a8d9ff;
     border: none;
     text-decoration: none;
     color: white;

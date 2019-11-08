@@ -1,0 +1,233 @@
+*,html,body
+{
+    margin:0;
+    padding: 0;
+}
+
+body
+{
+    height: 100%;
+}
+
+.sub-heading a
+{
+    color: orange;
+}
+
+header
+{
+    height: 17%;
+    line-height: 112px;
+    position: fixed;
+    z-index: 1;        
+    width: 100%;
+}
+
+.secondary
+{
+    background-color: black;
+    box-shadow: 0px 0px 17px 0px;
+    transition: all 0.3s ease-in;
+}
+
+ul
+{
+    list-style: none;
+}
+
+ul li
+{
+    display: inline-block;
+}
+
+header nav
+{
+    float: right;
+}
+
+.logo img
+{
+    margin-top: 30px;
+    margin-left: auto;
+}
+
+.navText{
+    padding-right: 80px;
+}
+
+header nav ul li a
+{
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s ease-in;
+}
+
+header nav ul li a:hover
+{
+    text-decoration: none;
+    color: orange;
+    font-weight: bolder;
+}
+
+.img1
+{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,.7)),url(..//images/konfirmationstelt.jpg);
+    background-size: 100% 100%;
+}
+
+.slider,.slider ul,.slider ul li
+{
+    height: 710px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.slider h2
+{
+    font-weight: bold;
+    margin-top: 270px;
+}
+
+.slider span
+{
+    color: orange;
+}
+
+.slider a
+{
+    padding: 10px 40px;
+}
+
+.slider a.btn-half
+{
+    background-color: orange;
+    color: black;
+}
+
+.slider a.btn-half:hover
+{
+    background-color: darkorange;
+}
+
+.img2
+{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(..//images/havebryllup-telt.jpg);
+    background-size: 100% 100%;
+}
+
+.img3
+{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(..//images/Master.jpg);
+    background-size: 100% 100%;
+}
+
+.intro-area
+{
+    position:relative;
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.sub-heading
+{
+    position: relative;
+    margin-bottom: 75px;
+}
+
+.sub-heading:before
+{
+    content: "";
+    position:absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -3%;
+    width: 6%;
+    height: 1px;
+    background-color: orange;
+    z-index: 1;
+    -webkit-transition: 0.3s ease;   /*Chrome. kalder*/
+    -moz-transition: 0.3s ease;    /*Mozilla*/
+    -ms-transition: 0.3s ease;    /*Internet-explorer*/
+    -o-transition: 0.3s ease;     /*Oprah-servers*/
+    transition: 0.3s ease;
+}
+
+.sub-heading:hover:before
+{
+    width: 24%;
+    margin-left: -12%;
+}
+
+.sub-heading:after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 24%;
+    margin-left: -12%;
+    height: 1px;
+    background-color: white;
+}
+
+.sub-heading p
+{
+    color: black;
+    display: inline-block;
+    padding: 0px 0px 20px;
+    position: relative;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+}
+
+.intro-block
+{
+    position: relative;
+    background-color: lightgrey;
+    margin: 50px 0px 0px;
+    padding: 70px 25px 40px;
+}
+
+.intro-block:hover, .intro-block.active
+{
+    background: orange;
+}
+
+.intro-block:hover
+{
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    box-shadow: 0px 0px 0px 1px;
+}
+
+.intro-block h3
+{
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 50px;
+    margin-top: -30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

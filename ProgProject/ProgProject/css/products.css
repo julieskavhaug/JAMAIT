@@ -17,8 +17,10 @@ header
     line-height: 112px;
     position: fixed;
     z-index: 1;
-    width: 100%;
+    width: 101%;
     background-color: black;
+    margin-top: -1%;
+    margin-left: -1%;
 }
 
 .secondary
@@ -42,12 +44,15 @@ ul li
 header nav
 {
     float: right;
+    margin-right: 5%;
+
 }
 
 .logo img
 {
     margin-top: 2.5%;
     margin-left: auto;
+    margin-left: 5%;
 }
 
 .navText
@@ -65,7 +70,7 @@ header nav ul li a{
 header nav ul li a:hover
 {
     text-decoration: none;
-    color: #a8d9ff;
+    color: orange;
     font-weight: bolder;
 }
 
@@ -92,7 +97,7 @@ header nav ul li a:hover
     margin-left: -3%;
     width: 6%;
     height: 1px;
-    background-color: #a8d9ff;
+    background-color: orange;
     z-index: 1;
     -webkit-transition: 0.3s ease;   /*Chrome. kalder*/
     -moz-transition: 0.3s ease;    /*Mozilla*/
@@ -133,13 +138,13 @@ header nav ul li a:hover
 {
     position: relative;
     background-color: lightgrey;
-    margin: 50px 0px 0px;
+    margin: 30px 35px 30px;
     padding: 70px 25px 40px;
 }
 
 .intro-block:hover, .intro-block.active
 {
-    background: #a8d9ff;
+    background: orange;
 }
 
 .intro-block:hover
@@ -159,6 +164,11 @@ header nav ul li a:hover
     font-weight: 700;
     margin-bottom: 50px;
     margin-top: -30px;
+}
+
+.grayBoxes{
+    width: 33%;
+    display: inline-block;
 }
 .tents
 {
@@ -187,7 +197,7 @@ header nav ul li a:hover
 
 .btn{
     padding: 6px 9px;
-    background-color: #a8d9ff;
+    background-color: orange;
     border: none;
     text-decoration: none;
     color: white;
@@ -196,7 +206,7 @@ header nav ul li a:hover
 
 .btn:hover{
     color: white;
-    background-color: #8acdff;
+    background-color: #db8009;
 }
 
 .shopping-cart{
@@ -249,4 +259,61 @@ header nav ul li a:hover
 #sub-total, #shipping{
     margin-left: 25%;
     margin-top: 10px;
+}
+.log-in{
+    padding-top: 7%;
+}
+
+
+.img1
+{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,.7)),url(..//images/konfirmationstelt.jpg);
+    background-size: 100% 100%;
+}
+
+.slider,.slider ul,.slider ul li
+{
+    height: 710px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.slider h2
+{
+    font-weight: bold;
+    margin-top: 270px;
+}
+
+.slider span
+{
+    color: orange;
+}
+
+.slider a
+{
+    padding: 10px 40px;
+}
+
+.slider a.btn-half
+{
+    background-color: orange;
+    color: black;
+}
+
+.slider a.btn-half:hover
+{
+    background-color: darkorange;
+}
+
+.img2
+{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(..//images/havebryllup-telt.jpg);
+    background-size: 100% 100%;
+}
+
+.img3
+{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(..//images/Master.jpg);
+    background-size: 100% 100%;
 }

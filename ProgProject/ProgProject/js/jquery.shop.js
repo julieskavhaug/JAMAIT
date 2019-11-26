@@ -470,7 +470,7 @@
 				return num;
 			} else {
 				console.warn( numStr + " cannot be converted into a number" );
-				return false;
+
 			}
 		},
 		

@@ -11,7 +11,7 @@ body
 
 .sub-heading a
 {
-    color: #a8d9ff;
+    color: orange;
 }
 
 header
@@ -47,7 +47,7 @@ header nav
 
 .logo img
 {
-    margin-top: 30px;
+    margin-top: 2.5%;
     margin-left: auto;
 }
 
@@ -65,7 +65,7 @@ header nav ul li a
 header nav ul li a:hover
 {
     text-decoration: none;
-    color: #a8d9ff;
+    color: orange;
     font-weight: bolder;
 }
 
@@ -91,7 +91,7 @@ header nav ul li a:hover
 
 .slider span
 {
-    color: #a8d9ff;
+    color: orange;
 }
 
 .slider a
@@ -101,13 +101,13 @@ header nav ul li a:hover
 
 .slider a.btn-half
 {
-    background-color: #a8d9ff;
+    background-color: orange;
     color: black;
 }
 
 .slider a.btn-half:hover
 {
-    background-color: #a8d9ff;
+    background-color: darkorange;
 }
 
 .img2
@@ -144,7 +144,7 @@ header nav ul li a:hover
     margin-left: -3%;
     width: 6%;
     height: 1px;
-    background-color: #a8d9ff;
+    background-color: orange;
     z-index: 1;
     -webkit-transition: 0.3s ease;   /*Chrome. kalder*/
     -moz-transition: 0.3s ease;    /*Mozilla*/
@@ -191,7 +191,7 @@ header nav ul li a:hover
 
 .intro-block:hover, .intro-block.active
 {
-    background: #a8d9ff;
+    background: orange;
 }
 
 .intro-block:hover
@@ -212,3 +212,22 @@ header nav ul li a:hover
     margin-bottom: 50px;
     margin-top: -30px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

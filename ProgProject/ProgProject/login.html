@@ -32,13 +32,12 @@
         <form class="login">
             <input type="text" placeholder="Enter Username" name="userid"/>
             <input type="password" Placeholder="Enter Password" name="pswrd"/>
-
-        </form>
-        <form class ="loginbuttons">
+<div class"=loginButtons">
             <input type="button" onclick="check(this.form)" value="Login"/>
             <input type="reset" value="Cancel"/>
-        </form>
-        <script language="javascript">
+</div>
+        <form/>
+        <script>
             function check(form)/*function to check userid & password*/
             {
                 /*the following code checkes whether the entered userid and password are matching*/
@@ -64,7 +63,7 @@
         <input id="registration_btn" type="submit" value="Register" onClick="storeLogin()"/>
     </form>
 
-    <script language="JavaScript">
+    <script>
         function storeLogin() {
             localStorage.setItem('username', username.value);
             localStorage.setItem('password', password.value);

@@ -56,13 +56,15 @@ header nav
 
 .navText
 {
-    padding-right: 80px;
+    padding-right: 82px;
+    margin-bottom: 400px;
 
 }
 header nav ul li a{
     font-weight: bold;
     color: white;
     text-decoration: none;
+    font-size: smaller;
     transition: all 0.3s ease-in;
 }
 
@@ -236,7 +238,7 @@ header nav ul li a:hover
 
 .pdelete a,
 .pdelete a:hover {
-    color: #c00;
+    color: #8acdff;
     text-decoration: none;
     font-size: 2.5em;
     display: block;
@@ -263,6 +265,10 @@ header nav ul li a:hover
     padding-top: 7%;
 }
 
+.h2
+{
+    margin-left: 400;
+}
 
 .img1
 {
@@ -315,4 +321,9 @@ header nav ul li a:hover
 {
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(..//images/Master.jpg);
     background-size: 100% 100%;
+}
+
+#header_testsalg
+{
+    margin-left: 49%;
 }

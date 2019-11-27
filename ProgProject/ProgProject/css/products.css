@@ -1,3 +1,4 @@
+
 h2
 {
     margin-top: 50px;
@@ -50,21 +51,18 @@ header nav
 .logo img
 {
     margin-top: 2.5%;
-    margin-left: auto;
     margin-left: 5%;
 }
 
 .navText
 {
-    padding-right: 82px;
-    margin-bottom: 400px;
+    padding-right: 80px;
 
 }
 header nav ul li a{
     font-weight: bold;
     color: white;
     text-decoration: none;
-    font-size: smaller;
     transition: all 0.3s ease-in;
 }
 
@@ -192,8 +190,8 @@ header nav ul li a:hover
     padding-left: 2%;
 }
 
-.products{
-    margin-left: 1%;
+#products{
+    margin-left: 7%;
 }
 
 .btn{
@@ -207,7 +205,7 @@ header nav ul li a:hover
 
 .btn:hover{
     color: white;
-    background-color: #8acdff
+    background-color: #7aa4c4;
 }
 
 .shopping-cart{
@@ -238,7 +236,7 @@ header nav ul li a:hover
 
 .pdelete a,
 .pdelete a:hover {
-    color: #8acdff;
+    color: #c00;
     text-decoration: none;
     font-size: 2.5em;
     display: block;
@@ -263,67 +261,4 @@ header nav ul li a:hover
 }
 .log-in{
     padding-top: 7%;
-}
-
-.h2
-{
-    margin-left: 400;
-}
-
-.img1
-{
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,.7)),url(..//images/konfirmationstelt.jpg);
-    background-size: 100% 100%;
-}
-
-.slider,.slider ul,.slider ul li
-{
-    height: 710px;
-    width: 100%;
-    color: white;
-    text-align: center;
-}
-
-.slider h2
-{
-    font-weight: bold;
-    margin-top: 270px;
-}
-
-.slider span
-{
-    color: #a8d9ff;
-}
-
-.slider a
-{
-    padding: 10px 40px;
-}
-
-.slider a.btn-half
-{
-    background-color: #a8d9ff;
-    color: black;
-}
-
-.slider a.btn-half:hover
-{
-    background-color: #8acdff
-}
-
-.img2
-{
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(..//images/havebryllup-telt.jpg);
-    background-size: 100% 100%;
-}
-
-.img3
-{
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(..//images/Master.jpg);
-    background-size: 100% 100%;
-}
-
-#header_testsalg
-{
-    margin-left: 49%;
 }

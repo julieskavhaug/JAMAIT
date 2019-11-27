@@ -28,31 +28,25 @@
     </header>
 
 
-
     <div id="content">
         <div class="row">
-            <div class="col-sm-12 text-center">
-                <h2>Tents</h2>
-                <div class="sub-heading">
-                </div>
-            </div>
+            <div id="header_testsalg"/><h2>Tents</h2></div>
+                  <div class="sub-heading">
+                  </div>
         </div>
-        <div id="products">
-            <ul>
-                <li>
-                    <div class="product-image">
-                        <img src="images/Master.jpg", width="550px", height="250px" />
-                    </div>
-                    <form id="addtocart" name="ola" action="index.html" method="get">
-                        <button id="tent-1" onclick="add_to_cart(this.id);" value="">Rent tent 1</button>
-                        <button id="tent-2" onclick="add_to_cart(this.id);" value="">Rent tent 2</button>
-                    </form>
-                </li>
-            </ul>
+                             <div id="products">
+                                 <form id="addtocart" name="ola" action="cart.html" method="get">
+                                     <button id="tent-1" onclick="add_to_cart(this.id);" value="">Rent tent 1</button>
+                                       <img src="images/Master.jpg", width="550px", height="250px"/>
+                                 </form>
+                                 <form id="addtocart2" name="ola" action="cart.html" method="get">
+                                      <button id="tent-2" onclick="add_to_cart(this.id);" value="">Rent tent 2</button>
+                                         <img src="images/Toppelt.jpg", width="550px", height="250px"/>
+                                  </form>
+             </div>
         </div>
-    </div>
 </div>
 
-<script src="js/main.js"></script>
+<script src="js/jquery.shop.js"></script>
 </body>
 </html>

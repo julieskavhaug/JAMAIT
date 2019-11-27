@@ -15,7 +15,7 @@
                 <ul>
                     <li class="navText"><a href="index.html">Home</a></li>
                     <li class="navText"><a href="products.html">Products</a></li>
-                    <li class="navText"><a href="login.html">Log-in</a></li>
+                    <li class="navText"><a href="Login.html">Log-in</a></li>
                     <li class="navText"><a href="contact.html">Contact</a></li>
                     <li><a href="cart.html" class="logo"><img src="images/CartIconWhite.png" alt="cart" width="25px" height="25px"></a></li>
                 </ul>
@@ -28,13 +28,40 @@
 
 <div class="log-in">
     <h2>Registration and Login</h2>
+        <form class="login">
+            <input type="text" placeholder="Enter Username" name="userid"/>
+            <input type="password" Placeholder="Enter Password" name="pswrd"/>
 
-    <form id="register-form">
+        </form>
+        <form class ="loginbuttons">
+            <input type="button" onclick="check(this.form)" value="Login"/>
+            <input type="reset" value="Cancel"/>
+        </form>
+        <script language="javascript">
+            function check(form)/*function to check userid & password*/
+            {
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.userid.value === "Jama" && form.pswrd.value === "IT")
+                {
+                    alert("Successful login")/*displays a message in case of successful login*/
+                }
+                else
+                {
+                    alert("Incorrect username or password")/*displays error message*/
+                }
+                /*After a successful login to the site we should be using a form of session caching to store the userdata.*/
+            }
+        </script>
+
+    <br />
+    <form class="register-form">
         <input id="username" type="text" placeholder="Enter desired Username" value=""/>
         <input id="password" type="password" placeholder="Enter desired Password" value=""/>
-        <input id="registration_btn" type="submit" value="Register" onClick="storeLogin()"/>
-
     </form>
+        <form class="registerUser">
+        <input id="registration_btn" type="submit" value="Register" onClick="storeLogin()"/>
+    </form>
+
     <script language="JavaScript">
         function storeLogin() {
             localStorage.setItem('username', username.value);
@@ -44,31 +71,7 @@
     </script>
 
 
-    <form name="login">
-        <input type="text" placeholder="Enter Username" name="userid"/>
-        <input type="password" Placeholder="Enter Password" name="pswrd"/>
-        <input type="button" onclick="check(this.form)" value="Login"/>
-        <input type="reset" value="Cancel"/>
-    </form>
-    <script language="javascript">
-        function check(form)/*function to check userid & password*/
-        {
-            /*the following code checkes whether the entered userid and password are matching*/
-            if(form.userid.value === "Jama" && form.pswrd.value === "IT")
-            {
-                alert("Successful login")/*displays a message in case of successful login*/
-            }
-            else
-            {
-                alert("Incorrect username or password")/*displays error message*/
-            }
-            /*After a successful login to the site we should be using a form of session caching to store the userdata.*/
-        }
-    </script>
 </div>
-
-
-
 
 
 

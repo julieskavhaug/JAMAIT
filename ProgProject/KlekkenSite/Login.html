@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="css/products.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <a href="index.html" class="logo"><img src="images/klekken01.png" alt="Klekken-Logo" width="150px" height="75px"></a>
+            <nav>
+                <ul>
+                    <li class="navText"><a href="index.html">Home</a></li>
+                    <li class="navText"><a href="products.html">Products</a></li>
+                    <li class="navText"><a id="activeTab" href="Login.html">Log-in</a></li>
+                    <li class="navText"><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html" class="cartIcon"><i class="fa fa-shopping-cart" style="font-size:25px"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+
+<div class="log-in">
+    <div class="col-sm-12 text-center">
+        <h2>Registration and Login</h2>
+        <div class="sub-heading" id="loginSub"/>
+    </div>
+    <p>Login</p>
+    <form class="login">
+        <input type="text" placeholder="Enter Username" name="userid"/>
+        <input type="password" Placeholder="Enter Password" name="pswrd"/>
+        <div class"=loginButtons">
+        <input type="button" onclick="check(this.form)" value="Login" class="btn"/>
+        <input type="reset" value="Cancel" class="btn"/>
+    </>
+    <form/>
+    <script>
+        function check(form)/*function to check userid & password*/
+        {
+            /*the following code checkes whether the entered userid and password are matching*/
+            if(form.userid.value === "Jama" && form.pswrd.value === "IT")
+            {
+                alert("Successful login")/*displays a message in case of successful login*/
+            }
+            else
+            {
+                alert("Incorrect username or password")/*displays error message*/
+            }
+            /*After a successful login to the site we should be using a form of session caching to store the userdata.*/
+        }
+    </script>
+
+    <br />
+    <p>Registration</p>
+    <form class="register-form">
+        <input id="username" type="text" placeholder="Enter desired Username" value=""/>
+        <input id="password" type="password" placeholder="Enter desired Password" value=""/>
+    </form>
+    <form class="registerUser">
+        <input id="registration_btn" type="submit" value="Register" onClick="storeLogin()" class="btn"/>
+    </form>
+
+    <script>
+        function storeLogin() {
+            localStorage.setItem('username', username.value);
+            localStorage.setItem('password', password.value);
+            alert('New user has been created.');
+        }
+    </script>
+
+
+</div>
+
+
+
+</body>
+</html>

@@ -36,29 +36,28 @@
                 </div>
             </div>
         </div>
-        <form id="shopping-cart" action="cart.html" method="post">
-            <table class="shopping-cart">
-                <thead>
-                <tr>
-                    <th scope="col">Item</th>
-                    <th scope="col">Qty</th>
-                    <th scope="col" colspan="2">Price</th>
-                </tr>
-                </thead>
-                <tbody>
 
-                </tbody>
+            <table class="shopping-cart">
+                <tr id ="itemTable">
+                    <th id="col">Item</th>
+                    <th id="Price" colspan="2">Price</th>
+                    <th id="Quantity">Quantity</th>
+                </tr>
+                <tr id="removeShopping">
+                    <td id = "Item input>">Item</td>
+                    <td id = "Price input>">Price</td>
+                    <td id = "Quantity input">Quantity</td>
+                    <td id = "Quantity remove";>
+                    <input type="button" value="Remove" onclick="deleteRow(this)"></td>
+                </tr>
             </table>
+
+
+
             <p id="sub-total">
-                <strong>Sub Total</strong>: <span id="stotal"></span>
+                <strong>Subtotal</strong>: <span id="stotal"></span>
             </p>
             <ul id="shopping-cart-actions">
-                <li>
-                    <input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
-                </li>
-                <li>
-                    <input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
-                </li>
                 <li>
                     <a href="products.html" class="btn">Continue Shopping</a>
                 </li>
@@ -66,7 +65,6 @@
                     <a href="checkout.html" class="btn">Go To Checkout</a>
                 </li>
             </ul>
-        </form>
     </div>
 </div>
 </body>

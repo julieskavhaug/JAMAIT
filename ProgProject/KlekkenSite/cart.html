@@ -37,21 +37,24 @@
             </div>
         </div>
 
-            <table class="shopping-cart">
-                <tr id ="itemTable">
-                    <th id="col">Item</th>
+            <table id="itemTable">
+                <tr>
+                    <th id="Item">Item</th>
                     <th id="Price" colspan="2">Price</th>
                     <th id="Quantity">Quantity</th>
+                    <th id ="">removeButton</th>
                 </tr>
-                <tr id="removeShopping">
+                <tr>
                     <td id = "Item input>">Item</td>
                     <td id = "Price input>">Price</td>
                     <td id = "Quantity input">Quantity</td>
-                    <td id = "Quantity remove">
+                    <td id = "Quantity_remove">
                     <input type="button" value="Remove" onclick="deleteRow(this)"></td>
                 </tr>
             </table>
+        <br>
 
+        <button onclick="myCreateFunction()">Create row</button>
 
 
             <p id="sub-total">

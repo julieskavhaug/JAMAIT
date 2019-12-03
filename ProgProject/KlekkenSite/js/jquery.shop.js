@@ -37,23 +37,23 @@ function clear_cart(){
 
 //inspirasjon fra W3schools
 function deleteRow(r) {
-	alert("FUNK");
-	var i = r.parentNode.parentNode.rowIndex;
-	document.getElementById("removeShopping").deleteRow(i);
+	var i = r.parentElement.parentElement.rowIndex;
+	document.getElementById("itemTable").deleteRow(i);
 }
-
-
-
-
 
 
 
 // inspirasjon fra W3schools
 function myCreateFunction() {
 	var table = document.getElementById("itemTable");
-	var row = table.insertRow(0);
+	var row = table.insertRow(1);
 	var cell1 = row.insertCell(0);
 	var cell2 = row.insertCell(1);
-	cell1.innerHTML = "NEW CELL1";
-	cell2.innerHTML = "NEW CELL2";
+	var cell3 = row.insertCell(2);
+	var cell4 = row.insertCell(3);
+	cell1.innerHTML = "Item";
+	cell2.innerHTML = "Price";
+	cell3.innerHTML = "Quantity";
+	cell4.innerHTML = document.getElementById("Quantity_remove").innerHTML
 }
+

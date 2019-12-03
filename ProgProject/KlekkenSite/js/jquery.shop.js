@@ -54,6 +54,6 @@ function myCreateFunction() {
 	cell1.innerHTML = "Item";
 	cell2.innerHTML = "Price";
 	cell3.innerHTML = "Quantity";
-	cell4.innerHTML = document.getElementById("Quantity_remove").innerHTML
+	cell4.innerHTML = "<input type=\"button\" value='Remove' onclick='deleteRow(this)'>";
 }
 

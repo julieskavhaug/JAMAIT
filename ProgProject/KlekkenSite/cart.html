@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Your Shopping Cart</title>
+    <title>Checkout Page</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="css/products.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.shop.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script>fillItems()</script>
 </head>
 <body id="checkout-page">
 
@@ -40,21 +40,14 @@
             <table id="itemTable">
                 <tr>
                     <th id="Item">Item</th>
-                    <th id="Price" colspan="2">Price</th>
+                    <th id="Price">Price</th>
                     <th id="Quantity">Quantity</th>
-                    <th id ="">removeButton</th>
-                </tr>
-                <tr>
-                    <td id = "Item input>">Item</td>
-                    <td id = "Price input>">Price</td>
-                    <td id = "Quantity input">Quantity</td>
-                    <td id = "Quantity_remove">
-                    <input type="button" value="Remove" onclick="deleteRow(this)"></td>
+                    <th id="removequantity"></th>
                 </tr>
             </table>
         <br>
+<script>buildTable()</script>
 
-        <button onclick="myCreateFunction()">Create row</button>
 
 
             <p id="sub-total">

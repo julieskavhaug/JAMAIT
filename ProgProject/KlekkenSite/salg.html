@@ -6,7 +6,7 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.shop.js"></script>
     <link href="css/products.css" rel="stylesheet" type="text/css">
-
+    <script>fillItems()</script>
 </head>
 <body>
 <div id="site">
@@ -36,18 +36,17 @@
     </div>
     <div id="products">
         <div id="Tentname">Tent</div>
-        <form id="addtocart" name="ola" action="cart.html" method="get">
-            <button class="tent_1" onclick="add_to_cart(this.id);" value="1">Rent tent 1</button>
-            <img class = "item image" src="images/Master.jpg", width="550px", height="250px"/>
+        <form name="tent-1" action="cart.html" method="get">
+            <button class="btn-tent-1" id="tent-1" onclick="add_to_cart(this.id);" value="1">Rent tent 1</button>
+            <img class = "item image" src="images/Master.jpg" width="550px" height="250px"/>
         </form>
 
 
-        <form id="addtocart2" name="ola" action="cart.html" method="get">
-            <button id="tent-2" onclick="add_to_cart(this.id);" value="1">Rent tent 2</button>
-            <img class="item image" src="images/Toppelt.jpg", width="550px", height="250px"/>
+        <form name="tent-2" action="cart.html" method="get">
+            <button class="btn-tent-2" id="tent-2" onclick="add_to_cart(this.id);" value="1">Rent tent 2</button>
+            <img class="item image" src="images/Toppelt.jpg" width="550px" height="250px"/>
         </form>
     </div>
-</div>
 </div>
 
 
@@ -59,10 +58,11 @@
             <span class="shop-item-price">100kr</span>
             <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
         </div>
-
+    </div>
 
 
 
         <script src="js/jquery.shop.js"></script>
+</div>
 </body>
 </html>

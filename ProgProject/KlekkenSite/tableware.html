@@ -6,6 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="css/products.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/jquery.shop.js"></script>
 
 </head>
 <body>
@@ -21,7 +22,7 @@
                     <li class="navText"><a href="contact.html">Contact</a></li>
                     <li><a href="cart.html" class="cartIcon"><i class="fa fa-shopping-cart" style="font-size:25px"></i></a></li>
                 </ul>
-
+<script>buildTable();fillItems()</script>
             </nav>
         </div>
     </div>
@@ -35,26 +36,15 @@
                 <h2>Tableware</h2>
                 <div class="sub-heading">
                 </div>
-                <table class = "tableware">
-                    <tr>
-                        <th> <img src="images/tableware.jpg", width="450px", height="450px" />
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>
-                        </th>
-                        <th>
-                        </th>
-                        <th>
-                        </th>
-                    </tr>
-                </table>
+
+                <form name="tableware-1" name="tw" action="cart.html" method="get">
+                    <button id="Tableware" onclick="add_to_cart(this.id);" value="1">Rent tableware</button>
+                    <img class = "item image" src="images/tableware.jpg", width="450px", height="450px"/>
+                </form>
             </div>
         </div>
     </div>
 </section>
-
-
-
 </body>
 </html>
+

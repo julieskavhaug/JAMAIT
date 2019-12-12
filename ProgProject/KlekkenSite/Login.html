@@ -25,60 +25,61 @@
     </div>
 </header>
 
-
-
 <div class="log-in">
     <div class="col-sm-12 text-center">
-        <h2>Registration and Login</h2>
-        <div class="sub-heading" id="loginSub"/>
+        <h2>Login and Registration</h2>
+        <div class="sub-heading" />
     </div>
     <p>Login</p>
     <form class="login">
-        <input type="text" placeholder="Enter Username" name="userid"/>
-        <input type="password" Placeholder="Enter Password" name="pswrd"/>
-        <div class"=loginButtons">
-        <input type="button" onclick="check(this.form)" value="Login" class="btn"/>
-        <input type="reset" value="Cancel" class="btn"/>
-    </>
-    <form/>
-    <script>
-        function check(form)/*function to check userid & password*/
-        {
-            /*the following code checkes whether the entered userid and password are matching*/
-            if(form.userid.value === "Jama" && form.pswrd.value === "IT")
-            {
-                alert("Successful login")/*displays a message in case of successful login*/
-            }
-            else
-            {
-                alert("Incorrect username or password")/*displays error message*/
-            }
-            /*After a successful login to the site we should be using a form of session caching to store the userdata.*/
-        }
-    </script>
+        <input type="text" placeholder="Enter Username" name="userid" id="user"/>
+        <input type="password" Placeholder="Enter Password" name="pswrd" id="pass"/>
 
-    <br />
-    <p>Registration</p>
-    <form class="register-form">
-        <input id="username" type="text" placeholder="Enter desired Username" value=""/>
-        <input id="password" type="password" placeholder="Enter desired Password" value=""/>
+        <div class="loginButtons">
+            <input type="button" onclick="checkuser()" value="Login" class="btn"/>
+            <input type="reset" value="Cancel" class="btn"/>
+
+        </div>
     </form>
-    <form class="registerUser">
-        <input id="registration_btn" type="submit" value="Register" onClick="storeLogin()" class="btn"/>
-    </form>
-
-    <script>
-        function storeLogin() {
-            localStorage.setItem('username', username.value);
-            localStorage.setItem('password', password.value);
-            alert('New user has been created.');
-        }
-    </script>
-
-
 </div>
+<br />
+<p>Registration</p>
+<form class="register-form">
+    <input id="username" type="text" placeholder="Enter desired Username" value=""/>
+    <input id="password" type="password" placeholder="Enter desired Password" value=""/>
+</form>
+<form class="registerUser">
+    <input id="registration_btn" type="button" value="Register" onClick="newUser()" class="btn"/>
+</form>
+<script>
 
+    var test = [{user:"test",password:"test"}]; //array af brugere, (array af objekt(user,password))
+    function checkuser() {
+        var user =  document.getElementById("user").value; //Definering af variable user som henter værdi fra input
+        var password =  document.getElementById("pass").value; ////Definering af variable password som henter værdi fra input
 
+        var fulluser = test.find(x => x.user === user); //leder efter bruger i array
+        if(fulluser != undefined && fulluser.user === user && fulluser.password === password) //checker om input findes og om det er korrekt
+            alert("Success"); // pop-up om information er korrekt
+        else{
+            alert("Wrong username or password"); // pop-up om information er forkert
+        }
+    }
+
+    function newUser() { // funktion til oprettelse af bruger
+        var username = document.getElementById("username").value; //Definering af variable user som henter værdi fra input
+        var password = document.getElementById("password").value; //Definering af variable password som henter værdi fra input
+
+        if(username === "" || password === "") // checker om der mangler information
+            alert("No username or password"); // pop-up om manglende information
+        else{
+            test.push({user: username, password: password}); // oprettelse af bruger
+            document.getElementById("username").value = ""; // clear
+            document.getElementById("password").value = ""; // clear
+            alert(username + " Created!"); // pop-up som angiver om oprettelse af bruger
+        }
+    }
+</script>
 
 </body>
 </html>

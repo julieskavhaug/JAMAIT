@@ -1,5 +1,5 @@
 
-/*legger til id i localstorage dersom den ikke er der fra før, julie*/
+//legger til id i localStorage dersom den ikke er der fra før, og legger til hver gang man klikker. julie
 function add_to_cart(id) {
 	if (!window.localStorage.getItem(id)) {
 		window.localStorage.setItem(id, 1);
@@ -9,7 +9,7 @@ function add_to_cart(id) {
 }
 
 
-//fjerne fra localstorage, julie
+//fjerner fra localStorage, oppdaterer siden, julie
 function removeItemFromCart(name){
 window.localStorage.removeItem(name);
 alert(name + " removed");
@@ -17,34 +17,8 @@ location.reload();
 }
 
 
-//inspirasjon fra W3schools, henter foreldreelementet til foreldreelementet og sletter dermed raden, fjerner fra ls, julie
-function deleteRow(r){
-	var i = r.parentElement.parentElement.rowIndex;
-	document.getElementById("itemTable").deleteRow(i);
-	removeItemFromCart();
-}
 
-
-
-// ?????
-window.localStorage.setItem("items", JSON.stringify(items));
-
-var items = JSON.parse(window.localStorage.getItem("items"));
-for (var i in items){
-	alert(items[i].name);
-}
-
-
-
-//window.localStorage.setItem(“keys”, keys);, julie
-for (items in window.localStorage.getItem('items')) {
-	if (window.localStorage.getItem(items.name)) {
-	}
-}
-
-
-//forloop, window.localStorage.getItem(items.name);, julie,
-
+//gjør at alle html-sidene kommuniserer med hverandre, og legger dem i ls. julie
 	function fillItems() {
 		var items = [{name: "tent-1", price: 1000}, {name: "tent-2", price: 1500}, {name: "Tableware", price: 200}];
 		window.localStorage.setItem("items", JSON.stringify(items))
@@ -74,9 +48,5 @@ lager raden dersom vi har lagt produktet i handlevognen lager den raden.*/
 	}
 
 
+	// " + .... + " er bare det samme som å slå sammen strenger, funket her fordi jeg har streng+ item.name
 
-// + er bare det samme som å slå sammen strenger, funket her fordi jeg har streng+ item.name
-
-function checkOut() {
-	alert ("Your request has been made")
-}
